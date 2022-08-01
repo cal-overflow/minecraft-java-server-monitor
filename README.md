@@ -19,7 +19,7 @@ The server will default to a host value of `127.0.0.1` and port value of `25565`
 
 See additional options [here](https://docs.docker.com/engine/reference/run/#docker-run-reference).
 
-View the [docker registry for the project]().
+View the [docker registry for the project](https://hub.docker.com/r/smarterservers/minecraft-java-server-monitor).
 
 ## Exit codes
   - `0`: No players are connected
