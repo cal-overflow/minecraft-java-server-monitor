@@ -12,6 +12,10 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@master
 
+      - name: Get the version
+        id: get_image_tag
+        run: echo ::set-output name=DOCKER_IMAGE::${GITHUB_REF/refs\/tags\//}
+
       - name: Login to DockerHub
         uses: docker/login-action@v2
         with:
@@ -22,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: "smarterservers/minecraft-java-server-monitor:v${GITHUB_REF#refs/*/}"
+          tags: "smarterservers/minecraft-java-server-monitor:${{ steps.get_image_tag.outputs.DOCKER_IMAGE }}"

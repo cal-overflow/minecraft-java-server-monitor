@@ -1,4 +1,4 @@
-# java server monitor
+# java server monitor [!["Push docker" workflow image](https://github.com/Smarter-Servers/server-monitor/actions/workflows/push-docker-image.yml/badge.svg)](https://github.com/Smarter-Servers/server-monitor/actions/workflows/push-docker-image.yml)
 Monitor a java server with ease.
 
 ### Technologies used
